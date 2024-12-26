@@ -1,0 +1,27 @@
+What are we looking for ? 
+- After we have split the categorical and the numerical feature, we plot graphs.
+- For numerical features
+    - Plot histograms to check distribution
+    - Look for outlier by outlier detection methods 
+    - get correlation with the target variable. Spearmen or pearson correlation test.
+
+
+- Compare a single feature, with all the other feature, and get some questions and answers.
+
+
+
+- When we are getting the feature importance, make sure the data frame has (target) has both 0 and 1. Because
+earlier when I was doing with the split target, only fraud, the feature importance, all of them was 0. SO make 
+sure to include the whole data frame.
+
+- dates make a mess when training, better to drop it out.
+- When getting the feature importance, make sure we dont use high resulting dimension encoding technique,
+Because, that is when the dimension increases. the features get split and the split feature cannot capture 
+the true depth of the data set, cannot get the pattern. So avoid splitting the features.
+
+- So even if the feature is nornmally distributeed, we do the scaling to make sire all of the features are on 
+same scale
+- Consider a dataset with two features, one representing age (0-100) and the other representing income (0-100,000).
+Even if age is normally distributed, the income feature would dominate distance calculations
+ due to its larger range if both features are not scaled
+    
