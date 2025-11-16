@@ -57,6 +57,8 @@ Technical implementation details and code are available in the accompanying Jupy
 
 ### 1. Temporal Fraud Concentration
 
+![Fraud rate by hour of day](figures/fraud_rate_by_hour.png)
+
 The analysis reveals a striking temporal pattern in fraudulent activity:
 - **52% of fraudulent transactions occur during early morning hours** (midnight–7 a.m.)
 - This represents a dramatic over-concentration, as only **3.7% of legitimate transactions** occur during this period
@@ -65,6 +67,8 @@ The analysis reveals a striking temporal pattern in fraudulent activity:
 **Implication:** Early morning hours represent a critical high-risk window requiring enhanced monitoring protocols.
 
 ### 2. Low-Value Transaction Targeting
+
+![Fraud distribution by amount band](figures/fraud_amount_distribution.png)
 
 Contrary to common assumptions about high-value fraud, the data shows:
 - **79% of fraudulent transactions involve amounts ≤ £35**
@@ -75,6 +79,8 @@ Contrary to common assumptions about high-value fraud, the data shows:
 
 ### 3. Channel-Specific Risk Profiles
 
+![Fraud share by channel](figures/fraud_by_channel.png)
+
 Online transactions demonstrate elevated fraud risk:
 - **Online channels account for 44% of fraudulent activity**
 - **Point-of-sale transactions represent 32%**
@@ -84,6 +90,8 @@ Online transactions demonstrate elevated fraud risk:
 **Implication:** Card-not-present transactions require enhanced authentication mechanisms, particularly for small-value, off-hours activity.
 
 ### 4. Merchant Category Vulnerabilities
+
+![Fraud by merchant group](figures/fraud_by_merchant_group.png)
 
 Specific merchant segments show heightened fraud exposure:
 - **Children's products merchants: 18% of online fraud**
@@ -100,32 +108,6 @@ Cross-border transaction analysis reveals:
 - Certain issuing institutions show elevated fraud exposure rates
 
 **Implication:** Geographic inconsistencies and institutional risk profiles provide additional fraud detection signals.
-
----
-
-## Supporting Visualizations
-
-The following charts illustrate the key fraud patterns identified in the analysis:
-
-### Temporal Distribution of Fraud
-![Fraud rate by hour of day](figures/fraud_rate_by_hour.png)
-
-*Fraudulent transactions show heavy concentration during early morning hours, with over half occurring before 7 a.m.*
-
-### Transaction Amount Analysis  
-![Fraud distribution by amount band](figures/fraud_amount_distribution.png)
-
-*The majority of fraudulent activity targets low-value transactions under £35, challenging traditional high-value monitoring approaches.*
-
-### Channel Risk Assessment
-![Fraud share by channel](figures/fraud_by_channel.png)
-
-*Online transactions demonstrate the highest fraud concentration, followed by point-of-sale and ATM channels.*
-
-### Merchant Category Exposure
-![Fraud by merchant group](figures/fraud_by_merchant_group.png)
-
-*Certain merchant categories show disproportionate fraud exposure, particularly children's products, electronics, and fashion retailers.*
 
 ---
 
